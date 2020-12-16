@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hallo</h1>
+    <script>
+      // membuat array
+      var daftarNama = [
+        {
+          nama: "strawberry",
+          warna: "merah",
+          ada_bijinya: "tidak",
+          harga: 9000,
+        },
+        {
+          nama: "strawberry",
+          warna: "merah",
+          ada_bijinya: "tidak",
+          harga: 9000,
+        },
+        {
+          nama: "strawberry",
+          warna: "merah",
+          ada_bijinya: "tidak",
+          harga: 9000,
+        },
+        showName:function(){
+       document.write(`Nama:$[{this.nama} </br> ]`);
+      }
+      ];
+
+      document.write(`<li>${daftarNama['nama']}</li>`);
+      daftarNama.showName();
+    </script>
+  </body>
+</html>
